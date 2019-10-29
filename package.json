@@ -1,0 +1,49 @@
+{
+  "name": "eslint-config-clinia",
+  "version": "1.0.0",
+  "description": "Clinia's ESLint config.",
+  "repository": "https://github.com/clinia/eslint-config-clinia",
+  "scripts": {
+    "test": "./scripts/test.sh",
+    "release": "./scripts/release.sh",
+    "lint": "eslint . --ignore-pattern sample-project",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "es6",
+    "clinia"
+  ],
+  "main": "base.js",
+  "author": "Clinia Health, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clinia/eslint-config-clinia"
+  },
+  "renovate": {
+    "extends": [
+      "config:library"
+    ],
+    "semanticCommits": true,
+    "rebaseStalePrs": true,
+    "automerge": true,
+    "major": {
+      "automerge": false
+    },
+    "automergeType": "branch-push"
+  },
+  "homepage": "https://github.com/clinia/eslint-config-clinia",
+  "devDependencies": {
+    "conventional-changelog-cli": "2.0.25",
+    "doctoc": "1.4.0",
+    "eslint": "5.16.0",
+    "eslint-config-algolia": "10.1.0",
+    "eslint-config-prettier": "6.5.0",
+    "eslint-plugin-eslint-comments": "3.1.2",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jest": "21.27.2",
+    "eslint-plugin-prettier": "2.7.0",
+    "json": "9.0.6"
+  }
+}
