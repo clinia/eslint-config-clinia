@@ -18,11 +18,11 @@ export default function connect(mapStateToProps) {
         super();
 
         if (mapStateToProps) {
-          this.state = mapStateToProps(context.algoliaStore.getState(), props);
+          this.state = mapStateToProps(context.cliniaStore.getState(), props);
 
-          this.unsubscribe = context.algoliaStore.subscribe(() => {
+          this.unsubscribe = context.cliniaStore.subscribe(() => {
             this.setState(
-              mapStateToProps(context.algoliaStore.getState(), this.props)
+              mapStateToProps(context.cliniaStore.getState(), this.props)
             );
           });
         }
@@ -36,7 +36,7 @@ export default function connect(mapStateToProps) {
 
       componentWillReceiveProps(nextProps) {
         this.setState(
-          mapStateToProps(this.context.algoliaStore.getState(), nextProps)
+          mapStateToProps(this.context.cliniaStore.getState(), nextProps)
         );
       }
 
@@ -49,7 +49,7 @@ export default function connect(mapStateToProps) {
           <WrappedComponent
             {...this.props}
             {...this.state}
-            helper={this.context.algoliaStore.getHelper()}
+            helper={this.context.cliniaStore.getHelper()}
           />
         );
       }
