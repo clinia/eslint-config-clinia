@@ -58,6 +58,7 @@ conventional-changelog --preset angular --infile CHANGELOG.md --same-file
 
 # git add and tag
 commitMessage="release v$newVersion
+
 See https://github.com/clinia/eslint-config-clinia/blob/master/CHANGELOG.md"
 git add package.json CHANGELOG.md README.md
 printf %s "$commitMessage" | git commit --file -
