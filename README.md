@@ -24,7 +24,6 @@ Just **focus** on coding.
   - [TypeScript with React](#typescript-with-react)
   - [Vue](#vue)
   - [Node.js](#nodejs)
-- [Existing codebase setup](#existing-codebase-setup)
 - [Setup autofix in IDE](#setup-autofix-in-ide)
 - [Ignoring files](#ignoring-files)
 - [Contributing](#contributing)
